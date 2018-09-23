@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+</head>
+<body>
+<style type="text/css">
+.one{
+background-color: #111;
+width: 100%;
+height:50px;
+overflow: hidden;
+}
+.na{
+	display: flex;
+	list-style-type: none;
+}
+li a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-family: verdana;
+
+
+}
+li a:hover{
+	color: #FF6D00;
+}
+body{
+	background-color: #111;
+}
+	.mini {width:100%; height:800px; overflow:hidden; position:relative; }
+	.mini img{ position:absolute; animation:fling-minislide 15s infinite; opacity:0; width: 100%; height: auto;}
+	@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+.mini img:nth-child(3){animation-delay:0s;}
+.mini img:nth-child(2){animation-delay:5s;}
+
+.mini img:nth-child(1){animation-delay:10s;}
+
+.login{
+	width: 320px;
+	height:420px;
+	left:490px;
+	position: absolute;
+	background: linear-gradient(to bottom right, #000000,#78909C);
+	box-sizing: border-box;
+	border-radius: 15px 15px 15px 15px;
+}
+#img1{
+	border-radius: 100%;
+	position: absolute;
+	top:-25%;
+	left: 200px;
+}
+h1{
+	font-family: verdana;
+	position: absolute;
+	left:35px;
+	color: #7986CB;
+
+}
+.login1{
+	position: absolute;
+	top:80px;
+	left: 25px;
+}
+input{
+	margin-bottom: 20px;
+	border:none;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	font-family: verdana;
+
+}
+form a{
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: verdana;
+	color: #00B8D4;
+	
+}
+button{
+	position: absolute;
+	left:35px;
+	font-family: verdana;
+	font-size: 20px;
+	border-radius: 5px 5px 5px 5px;
+	
+	color: #303F9F;
+}
+ button:hover{
+ 	border:2px solid #76FF03;
+ 	box-shadow: 2px 2px #18FFFF;
+ }
+ #main{
+ 	position:absolute;
+ 	width:90%;
+ 	top:1380px;
+ 	height:500px;
+ 	left: 50px;
+ 	
+ 	 }
+ #card{
+ 	position:absolute;
+ 	width:100%;
+ 	height:100%;
+ 	transform-style: preserve-3d;
+ 	transition: all 0.5s ease;
+ 	
+ }
+ #front{
+ 	position: absolute;
+ 	width:100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+ 	background: linear-gradient(to bottom right, #536DFE,#009688);
+ 	
+ 	border-radius: 10px 10px 10px 10px;
+ }
+  #back{
+ 	position: absolute;
+ 	width:100%;
+ 	height: 100%;
+ 	backface-visibility: hidden;
+ 	background: linear-gradient(to bottom right, #FFC107,#424242);
+ 	transform: rotateX(180deg);
+ 	border-radius: 10px 10px 10px 10px;
+ }
+ #card:hover{
+ 	transform:rotateX(180deg);
+ }
+ #fp{
+ 	position:absolute;
+ 	font-size: 50px;
+ 	font-family: verdana;
+ 	top:180px;
+ 	left: 480px;
+ }
+ #fp img{
+ 	border-radius: 100%;
+ }
+ #backd{
+ 	position: absolute;
+ 	top:30px;
+ 	left: 50px;
+ }
+ label{
+font-family: verdana;
+ }
+</style>
+<div class="one"><ul class="na">
+			<li class="l1"><a href="loading.html">HOME</a></li>
+			<li class="l2"> <a href="hotels.html">HOTELS</a></li>
+			<li class="l3"><a href="parallax2.html">ABOUTUS</a></li>
+			
+			<li ><a href="#this">LOGIN</a></li>
+			<li><a href="#main">REGISTER</a></li>
+		</ul></div>
+<div class="mini">
+	<img src="h1.jpg">
+	
+	<img src="h3.jpg" width="905px">
+	<img src="h4.jpg" width="905px">
+</div>
+<div id="this">
+	<div class="login">
+		<img src="con3.ico" width="170px" height="170px" id="img1">
+		
+			<h1>LOGIN</h1>
+
+			<div class="login1">
+			<form action="loc.php" method="post">
+				<label>Username:<input type="text" name="user" placeholder="username" required></label><br><br>
+				<label>Password:<input type="password" name="pass" placeholder="password" required></label><br><br>
+				<input type="submit" name="submit"><br><br>
+				<a href="#">Not Registered Yet ?</a>
+			</form>
+		</div>
+
+	
+	</div>
+</div>
+<div id="main">
+<div id="card">
+<div id="front"><p id="fp">REGISTER NOW! <br> HOVER HERE<br><img src="smi.jpg" width="100px" height="100px"></p></div>
+<div id="back">
+	
+	<div id="backd">
+	<form  action="con1.php" method="post">
+		<table cellspacing="55px">
+			<tr>
+				<td>
+				<label>YOUR NAME:
+					<input type="text" name="user1">
+				</label>
+
+
+
+			</td>
+
+
+<td>
+	<label> Set Your Username:
+		<input type="text" name="user2">
+
+	</label>
+	</td>
+	<td>
+		<label> Password:
+			<input type="password" name="pass">
+</label>
+</td>
+<td>
+	<label>Re-Enter Password:
+		<input type="password" name="pass1">
+		
+	</label>
+</td>
+<br>
+<td>
+	<label>Contry:
+		<input type="text" name="country">
+	</label>
+
+
+</td>
+</tr>
+
+
+		</table>
+<table cellpadding="45px" >
+	<tr>
+		<label>Email
+			<input type="email" name="email">
+		</label>
+	
+<td>
+	Gender:
+	<label>Male<input type="radio" name="gender" value="male"></label>
+<label>Female<input type="radio" name="gender" value="female"></label>
+</td>
+</tr>
+</table>
+<table>
+	
+<tr>
+	<td>
+		<td><button type="submit">Let's Go</button></td>
+
+	</td>
+</tr>
+
+</table>
+
+	</form>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

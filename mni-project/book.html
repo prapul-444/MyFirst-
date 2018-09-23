@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> booking</title></head>
+
+<body>
+    
+    <div class="d1">
+        <img src="r4.png" width="150px" height="150px">
+    <table cellpadding="50px">
+        
+        
+        <th><label>From:<input type="date" value="date" required></label></th>
+            <th><label>to:<input type="date" required></label></th>
+        <tr>
+        <th><label>No Of days:</label><input type="number" id="id1"  name="days" required></th>
+        <th><label>No Of People:</label><input type="number" id="id2" name="people" required></th>
+        </tr>
+        
+        <tr>
+            <th><label>No Of Rooms:<input type="number" name="rooms" id="id1"></label></th>
+           <th> <select type"dropdown">
+                <option>Razam</option>
+                <option>Vizag</option>
+                <option>New York</option>
+                <option>London</option>
+                <option>Bhimavaram</option>
+
+
+
+
+
+
+            </select></th>
+        </tr>
+            
+            
+        <tr>
+        <th><label>Total fare:<input type="text" name="fare" id="id4"></label>     <button onclick="return var1();">Get fare</button></th>
+        </tr>   
+
+
+        <tr>
+        <th><label>Type Your Email To Explore:<input type="email" name="email" required></label></th>
+        </tr> 
+            <tr>
+                <th><label>I Accept All Terms And Conditions<input type="checkbox" name="check" id="id5" required></label></th>
+            </tr>
+            
+            
+            
+            
+            
+            
+            </tr>
+            <tr>
+                <th><button onclick="window.location='booked.html'">Let's Go</button></th>
+            </tr>
+    
+    
+        </table>
+    
+    </div>
+   <p style="text-align:center">This window will close automatically within <span id="counter">120</span> second(s).</p>
+    
+    <style>
+    
+        body{
+            background-color: dodgerblue;
+        }
+        div{
+            background-color: white;
+        }
+        input:hover{
+            box-shadow: 2px 1px black;
+        }
+        img{
+            border-radius: 100%;
+            position: absolute;
+            top:-100px;
+            left: 635px;
+        }
+        img:hover{
+            border:1px solid black;
+        }
+    .d1{
+    position:absolute;
+        top:150px;
+        width: 800px;
+        height:1000px;
+        border:4px solid  aliceblue;
+        box-shadow: 2px 2px 2px 2px black;
+        border-radius: 8px 8px 8px 8px;
+    
+    
+    }
+        .d1:hover{
+            box-shadow: 2px 2px 1px black;
+        }
+        input{
+            border:none;
+            border-bottom: 1px solid #111;
+        }
+        label{
+            
+            font-family: cursive;
+            
+            
+        }
+        select{
+            width:150px;
+            height:30px;
+
+        }
+        option{
+            background-color: #111;
+            color: white;
+            font-family: cursive;
+
+        }
+        button{
+            border:none;
+            border-bottom: 1px solid #111;
+            border-radius: 2px 2px 2px 2px;
+            font-family: cursive;
+        }
+        p{
+            font-size: 20px;
+            font-family: verdana;
+
+        }
+        span{
+            color: white;
+        }
+        
+    </style>
+    <script type="text/javascript">
+        function var1()
+        {
+            var x=parseInt(document.getElementById("id1").value);
+            var y=parseInt(document.getElementById("id2").value);
+            
+
+            var z=parseInt(document.getElementById('id4').value=500*x*y);
+        }
+        function countdown() {
+
+    var i = document.getElementById('counter');
+
+    i.innerHTML = parseInt(i.innerHTML)-1;
+
+ if (parseInt(i.innerHTML)<=0) {
+
+  window.close();
+  exit;
+
+
+ }
+
+}
+
+setInterval(function(){ countdown(); },1000);
+
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    </script>
+    </body>
+</html>
